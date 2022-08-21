@@ -1,7 +1,17 @@
 import React from 'react'
 import styled from 'styled-components';
+// import {auth,provider} from "../firebase";
 
 const Header = () => {
+//     const handleAuth = ()=>{
+//     auth.signInWithPopop(provider).then((result)=>{
+//         console.log(result);
+//     }).catch((error)=>{
+//             alert(error.message);
+//         });
+//     };
+
+    // const handleAuth = ()=>{}
   return (
     <HeaderContainer>
         <div className="logo"><img src="/images/logo.svg" alt="" /></div>
@@ -25,6 +35,8 @@ const Header = () => {
                 <img src="/images/series-icon.svg" alt="" /><span>SERIES</span>
             </a>
         </NavMenu>
+
+        {/* <Login onClick={handleAuth}>Login</Login> */}
         <div className="userLogo"><img src="/images/Mypic.jpeg" alt="" /></div>
     </HeaderContainer>
   )
@@ -91,3 +103,8 @@ const NavMenu = styled.div`
         }
     }
 `;
+
+const Login  = styled.button`
+    color:black;
+    padding:7px 14px;
+`
